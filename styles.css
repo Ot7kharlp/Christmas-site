@@ -19,10 +19,10 @@ body {
 
 .gate {
   position: absolute;
-  top: -50%; /* Align gates to the top */
+  top: 0; /* Align gates to the top */
   width: 100vw; /* Full width of the screen */
   height: 100vh; /* Full height of the screen */
-  background-size: cover;
+  background-size: cover; /* Ensure the background image covers the whole gate */
   background-position: center;
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out, opacity 0.5s ease-in-out; /* Smooth sliding and fading */
