@@ -39,7 +39,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden; /* Hide initially using visibility */
 }
 
 .open-button {
@@ -67,31 +67,36 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none; /* Hidden initially */
+  visibility: hidden; /* Initially hidden */
   text-align: center;
-  width: 80%; /* Ensure the text fits well on small screens */
-  max-width: 600px; /* Prevent text from stretching too wide on larger screens */
+  width: 80%;
+  max-width: 600px;
+}
+
+.message.visible {
+  visibility: visible; /* Show when visible class is added */
+  animation: typing 5s steps(30) 1s forwards; /* Trigger typing effect */
 }
 
 .message h1 {
-  font-size: 6vw; /* Responsive font size (adjust for smaller screens) */
+  font-size: 6vw;
   color: #ffcc00; /* Gold color for festive feel */
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  animation: typing 5s steps(30) 1s forwards; /* Adjust time for the typing speed */
+  animation: typing 5s steps(30) 1s forwards;
 }
 
 .message p {
-  font-size: 4vw; /* Responsive font size for the body */
+  font-size: 4vw;
   color: #ffffff;
-  margin-top: 20px; /* Space between title and paragraph */
+  margin-top: 20px;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  animation: typing 5s steps(30) 3s forwards; /* Delay for the body text typing */
+  animation: typing 5s steps(30) 3s forwards;
 }
 
 /* Typewriter effect */
