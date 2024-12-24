@@ -1,4 +1,3 @@
-
 function openGate() {
   // Slide gates to the sides
   document.getElementById('gate-left').style.transform = 'translateX(100%)';
@@ -18,3 +17,10 @@ function openGate() {
     console.log("Audio play error: " + error);
   });
 }
+
+// Stop the audio when the user exits the website
+window.addEventListener('beforeunload', function() {
+  var audio = document.getElementById('background-audio');
+  audio.pause(); // Pause the audio
+  audio.currentTime = 0; // Reset audio to the start
+});
