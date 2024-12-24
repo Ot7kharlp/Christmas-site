@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -24,21 +25,21 @@ body {
   top: 0;
   width: 50vw; /* Half of the screen's width */
   height: 100vh; /* Full height of the screen */
-  background-size: cover; /* Make sure the background image fills the gate */
+  background-image: url('https://i.pinimg.com/originals/67/30/fc/6730fc7891a55b15eae25a341b0bd4ec.gif');
+  background-size: 200% 100%; /* Stretch the image to cover the whole width */
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out;
 }
 
 #gate-left {
   left: 0; /* Align to the left side */
-  background-image: url('https://s4.ezgif.com/tmp/ezgif-4-b3cd434f8a.gif');
-  background-position: left center;
+  background-position: left center; /* Show the left half of the image */
 }
 
 #gate-right {
   right: 0; /* Align to the right side */
-  background-image: url('https://s4.ezgif.com/tmp/ezgif-4-3c14af39f6.gif');
-  background-position: right center;
+  background-position: right center; /* Show the right half of the image */
+  border-left: 5px solid #fff;
 }
 
 .hidden {
