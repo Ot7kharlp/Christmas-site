@@ -44,7 +44,10 @@ body {
 }
 
 .open-button {
-  margin-top: 60vh;
+  position: absolute; /* Positioning it over the gates */
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -57,7 +60,7 @@ body {
 
 .open-button:active {
   box-shadow: 0 2px #005500;
-  transform: translateY(2px);
+  transform: translate(-50%, -50%) translateY(2px); /* Maintain centering on active state */
 }
 
 .message {
