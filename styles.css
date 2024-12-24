@@ -84,13 +84,13 @@ body {
 }
 
 .message h1 {
-  font-size: 5rem; /* Increase the font size of the header */
+  font-size: 2.5rem; /* Increase the font size of the header */
   color: #ffcc00; /* Gold color for festive feel */
   margin: 0; /* Remove any default margin */
 }
 
 .message p {
-  font-size: 2rem; /* Increase the font size of the paragraph */
+  font-size: 3.5rem; /* Increase the font size of the paragraph */
   color: #ffffff;
   margin-top: 20px; /* Space between the heading and the paragraph */
 }
