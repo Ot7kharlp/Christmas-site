@@ -1,105 +1,13 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Georgia', serif; /* Prettier font style */
-  background: linear-gradient(to bottom, #2a5298, #1e3c72);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  line-height: 2; /* Double spacing */
-}
+function openGate() {
+  // Slide gates to the sides
+  document.getElementById('gate-left').style.transform = 'translateX(-100%)';
+  document.getElementById('gate-right').style.transform = 'translateX(100%)';
 
-.container {
-  text-align: center;
-  position: relative;
-}
+  // Hide the "Open the Gate" button
+  document.querySelector('.open-button').style.display = 'none';
 
-.gate {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50vw;
-  height: 50vh;
-  background: #8b0000;
-  box-shadow: 0 0 10px #000;
-  transition: transform 1s ease-in-out;
-}
-
-#gate-left {
-  left: 0;
-  border-right: 5px solid #fff;
-}
-
-#gate-right {
-  right: 0;
-  border-left: 5px solid #fff;
-}
-
-.hidden {
-  display: none;
-}
-
-.open-button {
-  position: absolute;
-  bottom: 10%; /* Place the button at the bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background: #008000;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 4px #005500;
-}
-
-.open-button:active {
-  box-shadow: 0 2px #005500;
-  transform: translateY(2px);
-}
-
-.message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none; /* Hidden initially */
-  text-align: center;
-  width: 80%; /* Ensure the text fits well on small screens */
-  max-width: 600px; /* Prevent text from stretching too wide on larger screens */
-}
-
-.message h1 {
-  font-size: 6vw; /* Responsive font size (adjust for smaller screens) */
-  color: #ffcc00; /* Gold color for festive feel */
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 5s steps(30) 1s forwards; /* Adjust time for the typing speed */
-}
-
-.message p {
-  font-size: 4vw; /* Responsive font size for the body */
-  color: #ffffff;
-  margin-top: 20px; /* Space between title and paragraph */
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 5s steps(30) 3s forwards; /* Delay for the body text typing */
-}
-
-/* Typewriter effect */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+  // Show the message after the gates disappear
+  setTimeout(() => {
+    document.getElementById('message').style.display = 'block';
+  }, 1000); // Wait for the gate animation to complete
 }
