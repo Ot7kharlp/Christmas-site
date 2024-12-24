@@ -24,7 +24,7 @@ body {
   top: 0;
   width: 50vw; /* Half of the screen's width */
   height: 100vh; /* Full height of the screen */
-  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png');
+  background-image: url('https://res.cloudinary.com/jerrick/image/upload/v1732185638/673f0e26dc23af001d0e4e49.jpg'); /* New image */
   background-size: 200% 100%; /* Stretch the image to cover the whole width */
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out;
