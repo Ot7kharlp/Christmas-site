@@ -1,7 +1,7 @@
 function openGate() {
-  // Slide gates to the sides horizontally (no vertical movement)
-  document.getElementById('gate-left').style.transform = 'translateX(-100%)'; // Move left gate to the left
-  document.getElementById('gate-right').style.transform = 'translateX(100%)'; // Move right gate to the right
+  // Slide gates to the sides
+  document.getElementById('gate-left').style.transform = 'translateX(100%)'; // Move left gate to the right
+  document.getElementById('gate-right').style.transform = 'translateX(-100%)'; // Move right gate to the left
 
   // Hide the "Open the Gate" button
   document.querySelector('.open-button').style.display = 'none';
