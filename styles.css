@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -51,13 +50,13 @@ body {
   top: 50%; /* Center it vertically */
   left: 50%; /* Center it horizontally */
   transform: translate(-50%, -50%); /* Perfect centering */
-  padding: 20px 40px; /* Make the button bigger */
-  font-size: 24px; /* Increase the font size */
+  padding: 30px 60px; /* Increased size */
+  font-size: 32px; /* Larger font size */
   color: black; /* Change text color to black */
   background: white; /* Change button background to white */
   border: 3px solid #008000; /* Green border */
   cursor: pointer;
-  border-radius: 10px; /* Round the edges */
+  border-radius: 12px; /* Larger rounded edges */
   box-shadow: 0 4px #005500;
   z-index: 10; /* Ensure the button stays on top of the gates */
 }
@@ -77,27 +76,42 @@ body {
   justify-content: center; /* Vertically center content */
   align-items: center;      /* Horizontally center content */
   height: auto; /* Let the content dictate the height */
-  width: auto;  /* Let the content dictate the width */
+  width: 80%;  /* Set a max width */
   text-align: center; /* Ensure all text is centered */
   display: none; /* Hidden initially */
 }
 
 .message h1 {
-  font-size: 2rem; /* Make the "Merry Christmas" text smaller */
+  font-size: 3rem; /* Make the "Merry Christmas" text bigger */
   color: black; /* Change text color to black */
   margin: 0; /* Remove any default margin */
-  padding: 10px; /* Add padding around the text */
+  padding: 15px; /* Add padding around the text */
   border: 5px solid white; /* White border around the "Merry Christmas" text */
   background-color: rgba(255, 255, 255, 0.6); /* White background with 60% opacity */
   border-radius: 10px; /* Rounded corners for the border */
 }
 
 .message p {
-  font-size: 2.5rem; /* Make the other text bigger */
+  font-size: 2rem; /* Make the other text bigger */
   color: black; /* Change text color to black */
   margin-top: 20px; /* Space between the heading and the paragraph */
   padding: 15px; /* Add padding around the paragraph text */
   border: 5px solid white; /* White border around the paragraph */
   background-color: rgba(255, 255, 255, 0.6); /* White background with 60% opacity */
   border-radius: 10px; /* Rounded corners for the border */
+}
+
+@media (max-width: 768px) {
+  .open-button {
+    padding: 20px 40px; /* Adjust padding for mobile */
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+  
+  .message h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+  
+  .message p {
+    font-size: 1.8rem; /* Smaller font size for mobile */
+  }
 }
