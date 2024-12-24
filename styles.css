@@ -53,7 +53,7 @@ body {
   left: 50%; /* Center it horizontally */
   transform: translate(-50%, -50%); /* Perfect centering */
   padding: 60px 120px; /* Double the padding to make the button much bigger */
-  font-size: 72px; /* Double the font size */
+  font-size: 52px; /* Double the font size */
   color: black; /* Change text color to black */
   background: white; /* Change button background to white */
   border: 6px solid #008000; /* Increase the border size */
