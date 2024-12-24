@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -15,31 +16,33 @@ body {
 .container {
   text-align: center;
   position: relative;
-  height: 100%; /* Make sure container takes full screen height */
-  width: 100%; /* Make sure container takes full screen width */
 }
 
 .gate {
   position: absolute;
-  top: 0; /* Ensure both gates start at the top of the screen */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50vw; /* Half the screen's width */
   height: 100vh; /* Full height of the screen */
-  width: 50vw; /* Half the screen's width for each gate */
-  background-size: cover; /* Ensure the background image covers the whole gate */
-  background-position: center;
+  background: #8b0000;
   box-shadow: 0 0 10px #000;
-  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out; /* Smooth sliding and fading */
+  transition: transform 1s ease-in-out;
 }
 
 #gate-left {
-  left: 0; /* Position the left gate at the left edge of the screen */
+  left: 0; /* Position on the left side */
   border-right: 5px solid #fff;
-  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Image URL */
+  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png');
+  background-size: cover;
+  background-position: center;
 }
 
 #gate-right {
-  right: 0; /* Position the right gate at the right edge of the screen */
+  right: 0; /* Position on the right side */
   border-left: 5px solid #fff;
-  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Image URL */
+  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .hidden {
@@ -47,10 +50,7 @@ body {
 }
 
 .open-button {
-  position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center button over the gates */
+  margin-top: 60vh;
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -63,7 +63,7 @@ body {
 
 .open-button:active {
   box-shadow: 0 2px #005500;
-  transform: translate(-50%, -50%) translateY(2px);
+  transform: translateY(2px);
 }
 
 .message {
@@ -73,7 +73,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  display: none; /* Initially hidden */
+  display: none; /* Hidden initially */
 }
 
 .message h1 {
