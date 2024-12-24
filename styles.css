@@ -68,13 +68,12 @@ body {
 
 .message {
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  top: 0;
+  left: 0;
   display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center;     /* Vertically center the content */
   flex-direction: column;
-  justify-content: center; /* Vertically center content */
-  align-items: center;      /* Horizontally center content */
   height: 100vh; /* Full height */
   width: 100vw; /* Full width */
   text-align: center; /* Ensure all text is centered */
