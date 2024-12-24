@@ -90,7 +90,7 @@ body {
 }
 
 .message p {
-  font-size: 3.5rem; /* Increase the font size of the paragraph */
+  font-size: 3rem; /* Increase the font size of the paragraph */
   color: #ffffff;
   margin-top: 20px; /* Space between the heading and the paragraph */
 }
