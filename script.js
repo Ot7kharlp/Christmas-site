@@ -1,5 +1,5 @@
 function openGate() {
-  // Slide gates to the sides
+  // Slide gates to the sides horizontally (no vertical movement)
   document.getElementById('gate-left').style.transform = 'translateX(100%)'; // Move left gate to the right
   document.getElementById('gate-right').style.transform = 'translateX(-100%)'; // Move right gate to the left
 
