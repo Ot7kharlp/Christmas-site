@@ -25,7 +25,7 @@ body {
 .gate {
   position: absolute;
   top: 0;
-  width: 50vw; /* Half the screen's width */
+  width: 50vw; /* Half of the screen's width */
   height: 100vh; /* Full height of the screen */
   background: #8b0000;
   box-shadow: 0 0 10px #000;
@@ -67,18 +67,18 @@ body {
 }
 
 .message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* Vertically center content */
-  align-items: center;      /* Horizontally center content */
-  height: 100vh; /* Full viewport height */
-  width: 100vw;  /* Full width of the viewport */
-  display: none; /* Hidden initially */
-  text-align: center; /* Ensure all text is centered */
   position: absolute;
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  height: auto; /* Let the content dictate the height */
+  width: auto; /* Let the content dictate the width */
+  display: none; /* Hidden initially */
+  text-align: center; /* Ensure all text is centered */
 }
 
 .message h1 {
