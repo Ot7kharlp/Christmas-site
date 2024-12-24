@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@ body {
   top: 0;
   width: 50vw; /* Half of the screen's width */
   height: 100vh; /* Full height of the screen */
-  background-image: url('https://res.cloudinary.com/jerrick/image/upload/v1732185638/673f0e26dc23af001d0e4e49.jpg'); /* New image */
+  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png');
   background-size: 200% 100%; /* Stretch the image to cover the whole width */
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out;
@@ -41,57 +42,4 @@ body {
   border-left: 5px solid #fff;
 }
 
-.hidden {
-  display: none;
-}
-
-.open-button {
-  position: absolute; /* Positioning it over the gates */
-  top: 50%; /* Center it vertically */
-  left: 50%; /* Center it horizontally */
-  transform: translate(-50%, -50%); /* Perfect centering */
-  padding: 20px 40px; /* Make the button bigger */
-  font-size: 24px; /* Increase the font size */
-  color: black; /* Change text color to black */
-  background: white; /* Change button background to white */
-  border: 3px solid #008000; /* Green border */
-  cursor: pointer;
-  border-radius: 10px; /* Round the edges */
-  box-shadow: 0 4px #005500;
-  z-index: 10; /* Ensure the button stays on top of the gates */
-}
-
-.open-button:active {
-  box-shadow: 0 2px #005500;
-  transform: translate(-50%, -50%) translateY(2px); /* Maintain centering on active state */
-}
-
-.message {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center;     /* Vertically center the content */
-  flex-direction: column;
-  height: 100vh; /* Full height */
-  width: 100vw; /* Full width */
-  text-align: center; /* Ensure all text is centered */
-  background-image: url('https://img.freepik.com/premium-photo/christmas-background-with-blank-space-text_935074-2602.jpg'); /* New background image */
-  background-size: cover; /* Cover the entire area */
-  background-position: center; /* Center the image */
-  display: none; /* Hidden initially */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to prioritize text visibility */
-}
-
-.message h1 {
-  font-size: 3rem;
-  color: #ffcc00; /* Gold color for festive feel */
-  margin: 0; /* Remove any default margin */
-}
-
-.message p {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin-top: 20px; /* Space between the heading and the paragraph */
-}
+.hid
