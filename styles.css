@@ -28,7 +28,6 @@ body {
   background-size: 200% 100%; /* Stretch the image to cover the whole width */
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out;
-  z-index: 1; /* Gates are placed behind the button */
 }
 
 #gate-left {
@@ -59,7 +58,7 @@ body {
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 4px #005500;
-  z-index: 2; /* Ensure the button stays on top of the gates */
+  z-index: 10; /* Ensure the button stays on top of the gates */
 }
 
 .open-button:active {
