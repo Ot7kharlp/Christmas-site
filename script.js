@@ -1,13 +1,13 @@
 function openGate() {
-  // Slide gates to the sides
-  document.getElementById('gate-left').style.transform = 'translateX(100%)';
-  document.getElementById('gate-right').style.transform = 'translateX(-100%)';
+  // Slide gates to the sides while keeping them vertically centered
+  document.getElementById('gate-left').style.transform = 'translateX(100%) translateY(-50%)';
+  document.getElementById('gate-right').style.transform = 'translateX(-100%) translateY(-50%)';
 
   // Hide the "Open the Gate" button
   document.querySelector('.open-button').style.display = 'none';
 
-  // Show the message after the gates disappear
+  // Show the message after the gates disappear (wait 1 second for animation to finish)
   setTimeout(() => {
     document.getElementById('message').style.display = 'block';
-  }, 1000); // Wait for the gate animation to complete
+  }, 1000); // Adjusted for gate animation timing
 }
