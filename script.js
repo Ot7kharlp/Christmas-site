@@ -8,6 +8,7 @@ function openGate() {
 
   // Show the message after the gates disappear (wait 1 second for animation to finish)
   setTimeout(() => {
-    document.getElementById('message').style.display = 'block';
-  }, 1000); // Adjusted for gate animation timing
+    const message = document.getElementById('message');
+    message.classList.add('visible'); // Add the 'visible' class to trigger typing effect
+  }, 1000); // Wait for gate animation to complete before showing the message
 }
