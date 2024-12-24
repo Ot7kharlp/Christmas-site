@@ -64,13 +64,16 @@ body {
 }
 
 .message {
-  margin: 0 auto;
+  position: absolute;
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Vertically center content */
-  align-items: center;      /* Horizontally center content */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
   height: 100vh; /* Full viewport height */
-  width: 100vw;  /* Full width of the viewport */
+  width: 100vw; /* Full width of the viewport */
   display: none; /* Hidden initially */
   text-align: center; /* Ensure all text is centered */
 }
