@@ -69,18 +69,29 @@ body {
   transform: translate(-50%, -50%);
   display: none; /* Hidden initially */
   text-align: center;
+  width: 80%; /* Ensure the text fits well on small screens */
+  max-width: 600px; /* Prevent text from stretching too wide on larger screens */
 }
 
 .message h1 {
-  font-size: 3rem; /* Larger font for the header */
+  font-size: 6vw; /* Responsive font size (adjust for smaller screens) */
   color: #ffcc00; /* Gold color for festive feel */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 5s steps(30) 1s forwards; /* Adjust time for the typing speed */
 }
 
 .message p {
-  font-size: 1.5rem; /* Slightly larger font for body text */
+  font-size: 4vw; /* Responsive font size for the body */
   color: #ffffff;
-
-    color: #ffffff;
+  margin-top: 20px; /* Space between title and paragraph */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 5s steps(30) 3s forwards; /* Delay for the body text typing */
 }
 
 /* Typewriter effect */
@@ -91,13 +102,4 @@ body {
   100% {
     width: 100%;
   }
-}
-
-.message h1 {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 3s steps(30) 1s forwards; /* 3s for full typing, 1s delay */
-}
 }
