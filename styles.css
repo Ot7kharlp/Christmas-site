@@ -76,6 +76,7 @@ body {
 }
 
 .message h1 {
+  top: 50%;
   font-size: 3rem;
   color: #ffcc00; /* Gold color for festive feel */
   margin: 0; /* Ensure no extra space around the header */
