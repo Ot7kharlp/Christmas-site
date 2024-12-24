@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Georgia', serif; /* Prettier font style */
   background: linear-gradient(to bottom, #2a5298, #1e3c72);
   color: white;
   display: flex;
@@ -9,6 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  line-height: 2; /* Double spacing */
 }
 
 .container {
@@ -59,15 +60,20 @@ body {
 }
 
 .message {
-  margin-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically */
 }
 
 .message h1 {
-  font-size: 2.5rem;
-  color: #ffcc00;
+  font-size: 3rem; /* Larger font for the header */
+  color: #ffcc00; /* Gold color for festive feel */
 }
 
 .message p {
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Slightly larger font for body text */
   color: #ffffff;
 }
