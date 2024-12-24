@@ -19,7 +19,7 @@ body {
 
 .gate {
   position: absolute;
-  top: 0; /* Align gates to the top */
+  top: -50%; /* Align gates to the top */
   width: 100vw; /* Full width of the screen */
   height: 100vh; /* Full height of the screen */
   background-size: cover;
