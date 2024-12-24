@@ -12,5 +12,8 @@ function openGate() {
   }, 1000); // Wait for the gate animation to complete
 
   // Play the background music when the button is clicked
-  document.getElementById('background-audio').play();
+  var audio = document.getElementById('background-audio');
+  audio.play().catch((error) => {
+    console.log("Audio play error: " + error);
+  });
 }
