@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Georgia', serif; /* Prettier font style */
+  font-family: 'Georgia', serif;
   background: linear-gradient(to bottom, #2a5298, #1e3c72);
   color: white;
   display: flex;
@@ -9,7 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  line-height: 2; /* Double spacing */
+  line-height: 2;
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 .gate {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(0); /* Gate starts in the center */
   width: 50vw;
   height: 50vh;
   background: #8b0000;
@@ -31,11 +31,13 @@ body {
 #gate-left {
   left: 0;
   border-right: 5px solid #fff;
+  transform: translateY(-50%) translateX(-100%); /* Initially off-screen */
 }
 
 #gate-right {
   right: 0;
   border-left: 5px solid #fff;
+  transform: translateY(-50%) translateX(100%); /* Initially off-screen */
 }
 
 .hidden {
@@ -65,15 +67,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Center vertically */
+  height: 100vh;
+  display: none; /* Hidden initially */
 }
 
 .message h1 {
-  font-size: 3rem; /* Larger font for the header */
-  color: #ffcc00; /* Gold color for festive feel */
+  font-size: 3rem;
+  color: #ffcc00;
 }
 
 .message p {
-  font-size: 1.5rem; /* Slightly larger font for body text */
+  font-size: 1.5rem;
   color: #ffffff;
 }
