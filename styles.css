@@ -17,9 +17,6 @@ body {
   position: relative;
   width: 100vw; /* Full width of the screen */
   height: 100vh; /* Full height of the screen */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
 }
 
 .gate {
@@ -74,11 +71,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertically center content */
-  align-items: center; /* Horizontally center content */
+  align-items: center;      /* Horizontally center content */
   height: auto; /* Let the content dictate the height */
-  width: auto; /* Let the content dictate the width */
-  display: none; /* Hidden initially */
+  width: auto;  /* Let the content dictate the width */
   text-align: center; /* Ensure all text is centered */
+  display: none; /* Hidden initially */
 }
 
 .message h1 {
