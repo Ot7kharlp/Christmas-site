@@ -24,68 +24,21 @@ body {
   top: 0;
   width: 50vw; /* Half of the screen's width */
   height: 100vh; /* Full height of the screen */
-  background: #8b0000;
+  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png');
+  background-size: 200% 100%; /* Stretch the image to cover the whole width */
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out;
 }
 
 #gate-left {
   left: 0; /* Align to the left side */
-  border-right: 5px solid #fff;
+  background-position: left center; /* Show the left half of the image */
 }
 
 #gate-right {
   right: 0; /* Align to the right side */
+  background-position: right center; /* Show the right half of the image */
   border-left: 5px solid #fff;
 }
 
-.hidden {
-  display: none;
-}
-
-.open-button {
-  position: absolute; /* Positioning it over the gates */
-  top: 50%; /* Center it vertically */
-  left: 50%; /* Center it horizontally */
-  transform: translate(-50%, -50%); /* Perfect centering */
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background: #008000;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 4px #005500;
-}
-
-.open-button:active {
-  box-shadow: 0 2px #005500;
-  transform: translate(-50%, -50%) translateY(2px); /* Maintain centering on active state */
-}
-
-.message {
-  position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust for perfect centering */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Vertically center content */
-  align-items: center;      /* Horizontally center content */
-  height: auto; /* Let the content dictate the height */
-  width: auto;  /* Let the content dictate the width */
-  text-align: center; /* Ensure all text is centered */
-  display: none; /* Hidden initially */
-}
-
-.message h1 {
-  font-size: 3rem;
-  color: #ffcc00; /* Gold color for festive feel */
-  margin: 0; /* Remove any default margin */
-}
-
-.message p {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin-top: 20px; /* Space between the heading and the paragraph */
-}
+.hid
