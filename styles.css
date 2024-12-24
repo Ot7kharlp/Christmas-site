@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -24,67 +25,79 @@ body {
   top: 0;
   width: 50vw; /* Half of the screen's width */
   height: 100vh; /* Full height of the screen */
-  background-size: cover;
+  background-image: url('https://i.pinimg.com/originals/67/30/fc/6730fc7891a55b15eae25a341b0bd4ec.gif');
+  background-size: 200% 100%; /* Stretch the image to cover the whole width */
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out;
 }
 
-#gate-left, #gate-right {
-  transition: transform 1s ease-in-out;
+#gate-left {
+  left: 0; /* Align to the left side */
+  background-position: left center; /* Show the left half of the image */
+}
+
+#gate-right {
+  right: 0; /* Align to the right side */
+  background-position: right center; /* Show the right half of the image */
+  border-left: 5px solid #fff;
+}
+
+.hidden {
+  display: none;
 }
 
 .open-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px 40px;
-  font-size: 24px;
-  color: black;
-  background: white;
-  border: 3px solid #008000;
+  position: absolute; /* Positioning it over the gates */
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  padding: 20px 40px; /* Make the button bigger */
+  font-size: 24px; /* Increase the font size */
+  color: black; /* Change text color to black */
+  background: white; /* Change button background to white */
+  border: 3px solid #008000; /* Green border */
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 10px; /* Round the edges */
   box-shadow: 0 4px #005500;
-  z-index: 10;
+  z-index: 10; /* Ensure the button stays on top of the gates */
 }
 
-.open-button:hover {
-  box-shadow: 0 0 15px 5px #ffcc00;
-  transform: translate(-50%, -50%) scale(1.1);
+.open-button:active {
+  box-shadow: 0 2px #005500;
+  transform: translate(-50%, -50%) translateY(2px); /* Maintain centering on active state */
 }
 
 .message {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: auto;
-  text-align: center;
-  display: none;
+  justify-content: center; /* Vertically center content */
+  align-items: center;      /* Horizontally center content */
+  height: auto; /* Let the content dictate the height */
+  width: auto;  /* Let the content dictate the width */
+  text-align: center; /* Ensure all text is centered */
+  display: none; /* Hidden initially */
 }
 
 .message h1 {
-  font-size: 3rem;
-  color: #ffcc00;
-  margin: 0;
-  opacity: 0;
-  visibility: hidden;
+  font-size: 2rem; /* Make the "Merry Christmas" text smaller */
+  color: black; /* Change text color to black */
+  margin: 0; /* Remove any default margin */
+  padding: 10px; /* Add padding around the text */
+  border: 5px solid white; /* White border around the "Merry Christmas" text */
+  background-color: rgba(255, 255, 255, 0.6); /* White background with 60% opacity */
+  border-radius: 10px; /* Rounded corners for the border */
 }
 
 .message p {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin-top: 20px;
-  opacity: 0;
-  visibility: hidden;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  transition: width 5s ease;
+  font-size: 2.5rem; /* Make the other text bigger */
+  color: black; /* Change text color to black */
+  margin-top: 20px; /* Space between the heading and the paragraph */
+  padding: 15px; /* Add padding around the paragraph text */
+  border: 5px solid white; /* White border around the paragraph */
+  background-color: rgba(255, 255, 255, 0.6); /* White background with 60% opacity */
+  border-radius: 10px; /* Rounded corners for the border */
 }
