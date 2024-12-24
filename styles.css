@@ -20,7 +20,7 @@ body {
 .gate {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Vertically center */
   width: 50vw;
   height: 50vh;
   background-size: cover;
@@ -32,15 +32,15 @@ body {
 #gate-left {
   left: 0;
   border-right: 5px solid #fff;
-  transform: translateY(-50%) translateX(-100%);
-  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Add your image URL */
+  transform: translateY(-50%) translateX(0); /* Start in the center */
+  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Your image URL */
 }
 
 #gate-right {
   right: 0;
   border-left: 5px solid #fff;
-  transform: translateY(-50%) translateX(100%);
-  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Add your image URL */
+  transform: translateY(-50%) translateX(0); /* Start in the center */
+  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Your image URL */
 }
 
 .hidden {
@@ -48,7 +48,10 @@ body {
 }
 
 .open-button {
-  margin-top: 60vh;
+  position: absolute;
+  top: 50%; /* Position it at the center of the screen */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center it precisely over the gates */
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -61,7 +64,7 @@ body {
 
 .open-button:active {
   box-shadow: 0 2px #005500;
-  transform: translateY(2px);
+  transform: translate(-50%, -50%) translateY(2px);
 }
 
 .message {
@@ -71,7 +74,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  display: none;
+  display: none; /* Hidden initially */
 }
 
 .message h1 {
