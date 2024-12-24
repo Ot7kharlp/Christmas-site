@@ -50,13 +50,13 @@ body {
   top: 50%; /* Center it vertically */
   left: 50%; /* Center it horizontally */
   transform: translate(-50%, -50%); /* Perfect centering */
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background: #008000;
-  border: none;
+  padding: 20px 40px; /* Make the button bigger */
+  font-size: 24px; /* Increase the font size */
+  color: black; /* Change text color to black */
+  background: white; /* Change button background to white */
+  border: 3px solid #008000; /* Green border */
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px; /* Round the edges */
   box-shadow: 0 4px #005500;
   z-index: 10; /* Ensure the button stays on top of the gates */
 }
