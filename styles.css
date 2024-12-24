@@ -19,8 +19,9 @@ body {
 
 .gate {
   position: absolute;
-  top: 0; /* Align gates to the top */
-  width: 100vw; /* Full width of the screen */
+  top: 0; /* Ensure the gates align with the top */
+  left: 0; /* Start at the left edge */
+  width: 50vw; /* Half the screen's width (for left and right gates) */
   height: 100vh; /* Full height of the screen */
   background-size: cover; /* Ensure the background image covers the whole gate */
   background-position: center;
