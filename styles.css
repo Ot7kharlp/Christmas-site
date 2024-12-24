@@ -67,10 +67,10 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;  /* Vertically center content */
+  align-items: center;      /* Horizontally center content */
   height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full width of the viewport */
+  width: 100vw;  /* Full width of the viewport */
   display: none; /* Hidden initially */
   text-align: center; /* Ensure all text is centered */
 }
