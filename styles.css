@@ -82,7 +82,7 @@ body {
 }
 
 .message h1 {
-  font-size: 3rem; /* Make the "Merry Christmas" text bigger */
+  font-size: 2.5rem; /* Slightly smaller for better readability */
   color: black; /* Change text color to black */
   margin: 0; /* Remove any default margin */
   padding: 15px; /* Add padding around the text */
@@ -92,7 +92,7 @@ body {
 }
 
 .message p {
-  font-size: 2rem; /* Make the other text bigger */
+  font-size: 2rem; /* Slightly smaller text */
   color: black; /* Change text color to black */
   margin-top: 20px; /* Space between the heading and the paragraph */
   padding: 15px; /* Add padding around the paragraph text */
@@ -104,14 +104,14 @@ body {
 @media (max-width: 768px) {
   .open-button {
     padding: 20px 40px; /* Adjust padding for mobile */
-    font-size: 24px; /* Adjust font size for mobile */
+    font-size: 28px; /* Adjust font size for mobile */
   }
-  
+
   .message h1 {
-    font-size: 2.5rem; /* Smaller font size for mobile */
+    font-size: 2rem; /* Smaller font size for mobile */
   }
-  
+
   .message p {
-    font-size: 1.8rem; /* Smaller font size for mobile */
+    font-size: 1.5rem; /* Smaller font size for mobile */
   }
 }
