@@ -79,4 +79,25 @@ body {
 .message p {
   font-size: 1.5rem; /* Slightly larger font for body text */
   color: #ffffff;
+
+    color: #ffffff;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.message h1 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30) 1s forwards; /* 3s for full typing, 1s delay */
+}
 }
