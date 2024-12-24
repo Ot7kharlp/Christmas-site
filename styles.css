@@ -69,16 +69,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full width of the viewport */
   display: none; /* Hidden initially */
+  text-align: center; /* Ensure all text is centered */
 }
 
 .message h1 {
   font-size: 3rem;
-  color: #ffcc00;
+  color: #ffcc00; /* Gold color for festive feel */
+  margin: 0; /* Remove any default margin */
 }
 
 .message p {
   font-size: 1.5rem;
   color: #ffffff;
+  margin-top: 20px; /* Space between the heading and the paragraph */
 }
