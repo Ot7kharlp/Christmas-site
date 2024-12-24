@@ -22,7 +22,7 @@ body {
   top: 50%;
   transform: translateY(-50%); /* Vertically center */
   width: 100vw; /* Full width of the screen */
-  height: 50vh; /* Gate height */
+  height: 100vh; /* Gate height */
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 10px #000;
