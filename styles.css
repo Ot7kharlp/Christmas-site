@@ -69,13 +69,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
   display: none; /* Hidden initially */
 }
 
 .message h1 {
   font-size: 3rem;
-  color: #ffcc00;
+  color: #ffcc00; /* Gold color for festive feel */
 }
 
 .message p {
