@@ -87,7 +87,7 @@ body {
   margin: 0; /* Remove any default margin */
   padding: 15px; /* Add padding around the text */
   border: 5px solid white; /* White border around the "Merry Christmas" text */
-  background-color: rgba(255, 255, 255, 0.4); /* White background with 60% opacity */
+  background-color: rgba(255, 255, 255, 0.7); /* White background with 60% opacity */
   border-radius: 10px; /* Rounded corners for the border */
 }
 
@@ -97,7 +97,7 @@ body {
   margin-top: 20px; /* Space between the heading and the paragraph */
   padding: 15px; /* Add padding around the paragraph text */
   border: 5px solid white; /* White border around the paragraph */
-  background-color: rgba(255, 255, 255, 0.4); /* White background with 60% opacity */
+  background-color: rgba(255, 255, 255, 0.7); /* White background with 60% opacity */
   border-radius: 10px; /* Rounded corners for the border */
 }
 
