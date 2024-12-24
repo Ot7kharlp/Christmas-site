@@ -75,9 +75,12 @@ body {
   flex-direction: column;
   justify-content: center; /* Vertically center content */
   align-items: center;      /* Horizontally center content */
-  height: auto; /* Let the content dictate the height */
-  width: auto;  /* Let the content dictate the width */
+  height: 100vh; /* Full height */
+  width: 100vw; /* Full width */
   text-align: center; /* Ensure all text is centered */
+  background-image: url('https://img.freepik.com/premium-photo/christmas-background-with-blank-space-text_935074-2602.jpg'); /* New background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
   display: none; /* Hidden initially */
 }
 
