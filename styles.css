@@ -19,10 +19,10 @@ body {
 
 .gate {
   position: absolute;
-  top: 50%;
+  top: 0;
   transform: translateY(-50%);
   width: 50vw; /* Half of the screen's width */
-  height: 50vh; /* Half of the screen's height */
+  height: 100vh; /* Half of the screen's height */
   background: #8b0000;
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out;
