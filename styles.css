@@ -15,26 +15,27 @@ body {
 .container {
   text-align: center;
   position: relative;
+  width: 100vw; /* Full width of the screen */
+  height: 100vh; /* Full height of the screen */
 }
 
 .gate {
   position: absolute;
   top: 0;
-  transform: translateY(-50%);
-  width: 50vw; /* Half of the screen's width */
-  height: 100vh; /* Half of the screen's height */
+  width: 50vw; /* Half the screen's width */
+  height: 100vh; /* Full height of the screen */
   background: #8b0000;
   box-shadow: 0 0 10px #000;
   transition: transform 1s ease-in-out;
 }
 
 #gate-left {
-  left: 0;
+  left: 0; /* Align to the left side */
   border-right: 5px solid #fff;
 }
 
 #gate-right {
-  right: 0;
+  right: 0; /* Align to the right side */
   border-left: 5px solid #fff;
 }
 
@@ -66,6 +67,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  display: none; /* Hidden initially */
 }
 
 .message h1 {
