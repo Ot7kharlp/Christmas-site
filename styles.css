@@ -15,32 +15,31 @@ body {
 .container {
   text-align: center;
   position: relative;
+  height: 100%; /* Make sure container takes full screen height */
+  width: 100%; /* Make sure container takes full screen width */
 }
 
 .gate {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%); /* Vertically center */
-  width: 50vw;
-  height: 50vh;
-  background-size: cover;
+  top: 0; /* Ensure both gates start at the top of the screen */
+  height: 100vh; /* Full height of the screen */
+  width: 50vw; /* Half the screen's width for each gate */
+  background-size: cover; /* Ensure the background image covers the whole gate */
   background-position: center;
   box-shadow: 0 0 10px #000;
-  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out; /* Added opacity transition */
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out; /* Smooth sliding and fading */
 }
 
 #gate-left {
-  left: 0;
+  left: 0; /* Position the left gate at the left edge of the screen */
   border-right: 5px solid #fff;
-  transform: translateY(-50%) translateX(0); /* Start in the center */
-  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Your image URL */
+  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Image URL */
 }
 
 #gate-right {
-  right: 0;
+  right: 0; /* Position the right gate at the right edge of the screen */
   border-left: 5px solid #fff;
-  transform: translateY(-50%) translateX(0); /* Start in the center */
-  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Your image URL */
+  background-image: url('https://housing.com/news/wp-content/uploads/2022/12/image3-80.png'); /* Image URL */
 }
 
 .hidden {
@@ -49,9 +48,9 @@ body {
 
 .open-button {
   position: absolute;
-  top: 50%; /* Position it at the center of the screen */
+  top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center it precisely over the gates */
+  transform: translate(-50%, -50%); /* Center button over the gates */
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -74,7 +73,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  display: none; /* Hidden initially */
+  display: none; /* Initially hidden */
 }
 
 .message h1 {
@@ -85,26 +84,4 @@ body {
 .message p {
   font-size: 1.5rem;
   color: #ffffff;
-}
-Updated JavaScript:
-javascript
-Copy code
-function openGate() {
-  // Slide gates to the sides
-  document.getElementById('gate-left').style.transform = 'translateX(-100%)'; // Move left gate off-screen
-  document.getElementById('gate-right').style.transform = 'translateX(100%)'; // Move right gate off-screen
-
-  // Hide the "Open the Gate" button
-  document.querySelector('.open-button').style.display = 'none';
-
-  // Hide the gates after they finish moving
-  setTimeout(() => {
-    document.getElementById('gate-left').style.display = 'none'; // Hide left gate
-    document.getElementById('gate-right').style.display = 'none'; // Hide right gate
-  }, 1000); // After the gate animation completes
-
-  // Show the message after the gates disappear
-  setTimeout(() => {
-    document.getElementById('message').style.display = 'flex'; // Use flex to center the message
-  }, 1000); // Wait for the gate animation to complete (1s)
 }
