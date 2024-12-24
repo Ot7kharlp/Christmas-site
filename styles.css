@@ -81,6 +81,7 @@ body {
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the image */
   display: none; /* Hidden initially */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to prioritize text visibility */
 }
 
 .message h1 {
