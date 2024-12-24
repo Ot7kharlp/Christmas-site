@@ -39,14 +39,11 @@ body {
 }
 
 .hidden {
-  display: none; /* Hide initially using display */
+  display: none;
 }
 
 .open-button {
-  position: absolute;
-  bottom: 10%; /* Place the button at the bottom */
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 60vh;
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -63,48 +60,20 @@ body {
 }
 
 .message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none; /* Initially hidden */
-  text-align: center;
-  width: 80%;
-  max-width: 600px;
-}
-
-.message.visible {
-  display: block; /* Show when 'visible' class is added */
-  animation: typing 5s steps(30) 1s forwards; /* Trigger typing effect */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically */
 }
 
 .message h1 {
-  font-size: 6vw;
+  font-size: 3rem; /* Larger font for the header */
   color: #ffcc00; /* Gold color for festive feel */
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 5s steps(30) 1s forwards;
 }
 
 .message p {
-  font-size: 4vw;
+  font-size: 1.5rem; /* Slightly larger font for body text */
   color: #ffffff;
-  margin-top: 20px;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 5s steps(30) 3s forwards;
-}
-
-/* Typewriter effect */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
 }
